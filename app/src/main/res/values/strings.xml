@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MACPOP</string>
+    <string name="macpop">MacPop</string>
+    <string name="laporan">Laporan</string>
+    <string name="menu_produk">Menu</string>
+    <string name="edit_menu">Edit Menu</string>
+</resources>

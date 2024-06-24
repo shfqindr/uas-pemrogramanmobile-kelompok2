@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="imageViewMenu" type="id" />
+    <item name="textViewTitle" type="id" />
+    <item name="textViewDescription" type="id" />
+    <item name="textViewStock" type="id" />
+    <item name="textViewPrice" type="id" />
+    <item name="buttonEdit" type="id" />
+    <item name="buttonIncrement" type="id" />
+    <item name="buttonDecrement" type="id" />
+</resources>

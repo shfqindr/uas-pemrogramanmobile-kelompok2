@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Header dengan tombol back dan judul laporan -->
+    <LinearLayout
+        android:id="@+id/header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:background="@color/orange">
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="Back"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Laporan"
+            android:paddingTop="6dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginStart="16dp"/>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_logopng"
+            />
+
+    </LinearLayout>
+
+    <!-- Pilihan laporan harian, mingguan, bulanan -->
+    <LinearLayout
+        android:id="@+id/options_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/btn_harian"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Harian"
+            android:layout_marginEnd="8dp"/>
+
+        <Button
+            android:id="@+id/btn_mingguan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Mingguan"
+            android:layout_marginEnd="8dp"/>
+
+        <Button
+            android:id="@+id/btn_bulanan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Bulanan"/>
+
+    </LinearLayout>
+
+    <!-- Container untuk menampilkan tabel/grafik laporan -->
+    <FrameLayout
+        android:id="@+id/container_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="16dp">
+
+        <!-- Placeholder untuk menampilkan laporan -->
+        <TextView
+            android:id="@+id/tv_placeholder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Pilih jenis laporan di atas"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            android:gravity="center"/>
+
+        <!-- Tambahkan komponen seperti RecyclerView atau Chart di sini sesuai kebutuhan -->
+
+    </FrameLayout>
+
+</LinearLayout>
